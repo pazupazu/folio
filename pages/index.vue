@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import navigation from '~/components/navigation'
-import card from '~/components/card'
+import navigation from '@/components/Navigation'
+import card from '@/components/Card'
 export default {
   components: {
     navigation,

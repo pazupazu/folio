@@ -1,60 +1,50 @@
 <template>
   <div>
-    <template v-if="!$store.state.authUser">
-      <login></login>
-    </template>
-    <template v-else>
     <navigation></navigation>
     <div class="hero container">
       <h1 class="title">プロダクトをグロースさせる（させたい）デザイナーの河西耕平です</h1>
     </div>
     <div class="cards container mx-auto">
-      <card v-for="entry in entries"
-      :item="entry"
-      :key="entry.id"
-      ></card>
+        <card v-for="item in entries"
+        :item="item"
+        :key="item.id"
+        ></card>
     </div>
-    </template>
   </div>
 </template>
 
 <script>
-import login from '@/components/Login'
-import navigation from '~/components/Navigation'
-import card from '~/components/Card'
+import navigation from '~/components/navigation'
+import card from '~/components/card'
 export default {
   components: {
     navigation,
-    card,
-    login
+    card
   },
   layout: 'top',
   data() {
     return {
-      error: null,
-      formUsername: '',
-      formPassword: '',
       entries: [
         {
           id: 1,
           url: 'shallwelotte',
           title: 'Shall we Lotte',
           category: 'UIデザイン／ビジュアルデザイン／マークアップ',
-          thumb: 'images/swl-main-image@1000w.png'
+          thumb: 'images/swl-main-image@1000w.jpg'
         },
         {
           id: 2,
           url: 'mint',
           title: 'ミントの世界',
           category: 'UIデザイン／ビジュアルデザイン／マークアップ',
-          thumb: 'images/mint-main-image@1000w.png'
+          thumb: 'images/mint-main-image@1000w.jpg'
         },
         {
           id: 3,
           url: 'justmysound',
           title: 'わたしのオト',
           category: 'UIデザイン／ビジュアルデザイン／マークアップ',
-          thumb: 'images/jms-main-image@1000w.png'
+          thumb: 'images/jms-main-image@1000w.jpg'
         },
         {
           id: 4,
@@ -68,53 +58,44 @@ export default {
           url: 'toidasvote',
           title: 'トイダス 投票',
           category: 'UI/UXデザイン／マークアップ',
-          thumb: 'images/toidas-vote-main-image@1000w.png'
+          thumb: 'images/toidas-vote-main-image@1000w.jpg'
         },
         {
           id: 6,
           url: 'toidasmypage',
           title: 'トイダス マイページ',
           category: 'UI/UXデザイン／マークアップ',
-          thumb: 'images/toidas-mypage-main-image@1000w.png'
+          thumb: 'images/toidas-mypage-main-image@1000w.jpg'
         },
         {
           id: 7,
           url: 'toidas',
           title: 'トイダス',
           category: 'UIデザイン／ビジュアルデザイン／企画／運営',
-          thumb: 'images/toidas-main-image@0,25x.png'
+          thumb: 'images/toidas-main-image@0,25x.jpg'
         },
         {
           id: 8,
           url: 'premium',
           title: 'J-CASTニュース会員化',
           category: 'UI/UXデザイン／マークアップ／ビジュアルデザイン／企画／運営',
-          thumb: 'images/premium-main-image@1000w.png'
+          thumb: 'images/premium-main-image@1000w.jpg'
         },
         {
           id: 9,
           url: 'kaizen',
           title: 'UIカイゼン',
           category: 'UI/UXデザイン／マークアップ／企画／進行',
-          thumb: 'images/kaizen-main-image@0,25x.png'
+          thumb: 'images/kaizen-main-image@0,25x.jpg'
         },
         {
           id: 10,
           url: 'graphic',
           title: 'ロゴ・グラフィック',
           category: 'グラフィックデザイン',
-          thumb: 'images/logo-main-image.png'
+          thumb: 'images/logo-main-image.jpg'
         }
       ]
-    }
-  },
-  methods: {
-    async logout () {
-      try {
-        await this.$store.dispatch('logout')
-      } catch (e) {
-        this.error = e.message
-      }
     }
   }
 }

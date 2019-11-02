@@ -11,8 +11,9 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
-      }
+        content: "河西のポートフォリオです。"
+      },
+      { hid: "robots", name: "robots", content: "noindex" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -38,7 +39,21 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ["@nuxtjs/pwa"],
+  manifest: {
+    // manifestの設定
+    lang: "ja",
+    name: "河西耕平のポートフォリオ",
+    short_name: "Portfolio",
+    description: "河西耕平のポートフォリオです",
+    background_color: "#EDF2F7",
+    orientation: "portrait"
+  },
+  workbox: {
+    offline: true,
+    skipWaiting: true,
+    clientsClaim: true
+  },
   /*
    ** Build configuration
    */

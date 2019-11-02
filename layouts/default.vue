@@ -38,35 +38,49 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-
 .hero-image {
   @apply mb-20;
 }
-.main-title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 48px;
-  @apply text-gray-700;
-}
-.sub-title {
-  text-align: center;
-  @apply text-gray-600 text-sm;
-}
-p {
-  @apply max-w-2xl mx-auto px-4 text-gray-900 leading-relaxed mb-10;
-  &.small-text {
-    @apply text-gray-600 mb-1 text-xs;
+.entry {
+  margin-bottom: 100px; 
+  .main-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    @apply text-gray-700;
+  }
+  .sub-title {
+    text-align: center;
+    @apply text-gray-600 text-sm;
+  }
+  p {
+    @apply max-w-2xl mx-auto px-4 text-gray-900 leading-relaxed mb-10;
+    &.small-text {
+      @apply text-gray-600 mb-1 text-xs;
+    }
+  }
+  ul {
+    @apply max-w-2xl mx-auto px-4 mb-10;
+    li {
+      @apply ml-6 py-1 text-gray-900;
+    }
+  }
+  .heading {
+    @apply max-w-2xl mx-auto px-4 text-gray-700 leading-relaxed mb-8 pt-10 text-xl font-extrabold;
+  }
+  .image {
+    max-width: 1080px;
+    @apply mx-auto mb-10;
+    img {
+      @apply max-w-full mx-auto;
+    }
+    .caption {
+      @apply text-sm text-gray-600 text-center py-4;
+    }
   }
 }
-.heading {
-  @apply max-w-2xl mx-auto px-4 text-gray-700 leading-relaxed mb-8 pt-10 text-xl font-extrabold;
-}
-.image {
-  max-width: 1080px;
-  @apply mx-auto mb-10;
-  img {
-    @apply max-w-full mx-auto;
-  }
+.related-heading {
+  @apply mx-auto mb-8 px-4 text-xl text-gray-600 font-bold;
 }
 </style>

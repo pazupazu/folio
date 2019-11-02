@@ -21,6 +21,11 @@ export default {
     navigation,
     card
   },
+  head () {
+    return {
+      title: '河西耕平のポートフォリオ'
+    }
+  },
   layout: 'top',
   data() {
     return {

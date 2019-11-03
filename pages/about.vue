@@ -6,8 +6,10 @@
     <article class="entry">
       <h1 class="main-title mb-10">河西 耕平</h1>
       <p>
-        1989年生まれ、大学でグラフィックデザインを選考したのち写真スタジオで人物レタッチャーを経験後、ネットニュース、J-CASTでウェブデザイナーに転身。<br />
-        得意ジャンルはメディアデザイン・ユーザーインタフェースデザイン・数値ベースでの改善など。1児の父。080-3543-3587, kkouhei3@gmail.com
+        1989年生まれ、大学でグラフィックデザインを専攻したのち写真スタジオで人物レタッチャーを経験後、ネットメディアJ-CASTでウェブデザイナーに転身。<br />
+        得意ジャンルはメディアデザイン・ユーザーインタフェースデザイン・数値ベースでの改善など。1児の父。
+        <br />080-3543-3587
+        <br />kkouhei3@gmail.com
       </p>
       <h2 class="heading">
         株式会社ジェイ・キャスト
@@ -51,7 +53,7 @@
       <h2 class="heading">
         スキル・ツール
       </h2>
-      <p>
+      <p class="break-words">
         HTML/CSS/SCSS/Sass/JavaScript/Nuxt.js/Vue.js/MobableType/Figma/Sketch/XD/Photoshop/Illustrator
       </p>
     </article>

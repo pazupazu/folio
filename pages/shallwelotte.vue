@@ -70,6 +70,7 @@
 </template>
 
 <script>
+import card from '@/components/Card'
 export default {
   head () {
     return {

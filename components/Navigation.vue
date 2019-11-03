@@ -5,7 +5,7 @@
         <nuxt-link to="/">Kohei Kawanishi</nuxt-link>
       </div>
       <div class="header-item">
-        <nuxt-link to="/" class="mr-4">PDF</nuxt-link>
+        <!-- <nuxt-link to="/" class="mr-4">PDF</nuxt-link> -->
         <nuxt-link to="/about">About</nuxt-link>
       </div>
     </div>

@@ -48,6 +48,12 @@
         2009年 04月～2013年 03月<br />
         グラフィックデザイン学科
       </p>
+      <h2 class="heading">
+        スキル・ツール
+      </h2>
+      <p>
+        HTML/CSS/SCSS/Sass/JavaScript/Nuxt.js/Vue.js/MobableType/Figma/Sketch/XD/Photoshop/Illustrator
+      </p>
     </article>
     <h3 class="related-heading container">他にも見る</h3>
     <div class="cards container mx-auto">

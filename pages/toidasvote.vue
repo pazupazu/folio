@@ -60,6 +60,24 @@
       <div class="image">
         <img src="images/toidas-vote-image-03@2x.jpg" alt="" lazy="loaded">
       </div>
+      <h2 class="heading">
+        最終成果物
+      </h2>
+      <p>
+        クリーンなイメージを心がけ、1つの画面に機能を盛り込みすぎず、なるだけ心理的負荷の少ないようにしました。またまたスマートフォンでも作成できるようレスポンシブデザインとして作成しました。
+      </p>
+      <div class="image">
+        <img src="images/toidas-vote-design-image.jpg" alt="" lazy="loaded">
+      </div>
+      <h2 class="heading">
+        今後の展開
+      </h2>
+      <p>
+        投票の作成画面が出来上がったタイミングでわたしはこの作成画面を現在のクイズ・診断にも応用し作成画面のスマートフォン対応が可能か試してみました。いくつものナビゲーションのアイデアを出し、機能実現が可能か試作しました。
+      </p>
+      <div class="image">
+        <img src="images/toidas-vote-image-04@2x.jpg" alt="" lazy="loaded">
+      </div>
     </article>
     <h3 class="related-heading container">他にも見る</h3>
     <div class="cards container mx-auto">

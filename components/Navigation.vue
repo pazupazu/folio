@@ -5,7 +5,7 @@
         <nuxt-link to="/">Kohei Kawanishi</nuxt-link>
       </div>
       <div class="header-item">
-        <a href="https://drive.google.com/file/d/1D_ADMIXOd3nTyjh1ATMbDUppkhGNDdRq/view?usp=sharing" target="_blank" class="mr-4">PDF</a>
+        <nuxt-link to="/" class="mr-4">TOP</nuxt-link>
         <nuxt-link to="/about">About</nuxt-link>
       </div>
     </div>

@@ -3,8 +3,9 @@
     <nuxt-link :to="item.url" class="card block">
       <div class="image" :style="{backgroundImage: 'url(' + item.thumb + ')'}" lazy="loaded">
       </div>
-      <h2 class="text-md text-gray-700">{{item.title}}</h2>
+      <h2 class="text-gray-700 mb-1 font-bold">{{item.title}}</h2>
       <div class="text-xs text-gray-600">{{item.category}}</div>
+      <div class="text-xs text-gray-600">{{item.year}}</div>
     </nuxt-link>
   </div>
 </template>

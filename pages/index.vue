@@ -4,12 +4,19 @@
     <div class="hero container">
       <h1 class="title">プロダクトをグロースさせる（させたい）デザイナーの河西耕平です</h1>
     </div>
+    <p class="subinfo container text-sm"><span class="new"><i class="material-icons">arrow_back</i></span>NEW OLD<span class="old"><i class="material-icons">arrow_forward</i></span></p>
     <div class="cards container mx-auto">
         <card v-for="item in entries"
         :item="item"
         :key="item.id"
         ></card>
     </div>
+    <div class="container mx-auto mb-24 px-4">
+      <a href="https://drive.google.com/file/d/1D_ADMIXOd3nTyjh1ATMbDUppkhGNDdRq/view?usp=sharing" target="_blank" class="button mr-4">
+        PDFで見る
+      </a>
+    </div>
+    
   </div>
 </template>
 
@@ -32,73 +39,84 @@ export default {
       entries: [
         {
           id: 1,
-          url: 'shallwelotte',
-          title: 'Shall we Lotte',
-          category: 'UIデザイン／ビジュアルデザイン／マークアップ',
-          thumb: 'images/swl-main-image@1000w.jpg'
-        },
-        {
-          id: 2,
-          url: 'mint',
-          title: 'ミントの世界',
-          category: 'UIデザイン／ビジュアルデザイン／マークアップ',
-          thumb: 'images/mint-main-image@1000w.jpg'
-        },
-        {
-          id: 3,
-          url: 'justmysound',
-          title: 'わたしのオト',
-          category: 'UIデザイン／ビジュアルデザイン／マークアップ',
-          thumb: 'images/jms-main-image@1000w.jpg'
-        },
-        {
-          id: 4,
           url: 'queque',
           title: 'QueQue',
           category: 'UI/UXデザイン',
-          thumb: 'images/queque-main-image.jpg'
+          thumb: 'images/queque-main-image.jpg',
+          year: 2019
         },
         {
-          id: 5,
-          url: 'toidasvote',
-          title: 'トイダス 投票',
-          category: 'UI/UXデザイン／マークアップ',
-          thumb: 'images/toidas-vote-main-image@1000w.jpg'
+          id: 2,
+          url: 'shallwelotte',
+          title: 'Shall we Lotte',
+          category: 'UIデザイン／ビジュアルデザイン／マークアップ',
+          thumb: 'images/swl-main-image@1000w.jpg',
+          year: 2019
         },
         {
-          id: 6,
-          url: 'toidasmypage',
-          title: 'トイダス マイページ',
-          category: 'UI/UXデザイン／マークアップ',
-          thumb: 'images/toidas-mypage-main-image@1000w.jpg'
-        },
-        {
-          id: 7,
-          url: 'toidas',
-          title: 'トイダス',
-          category: 'UIデザイン／ビジュアルデザイン／企画／運営',
-          thumb: 'images/toidas-main-image@0,25x.jpg'
-        },
-        {
-          id: 8,
-          url: 'premium',
-          title: 'J-CASTニュース会員化',
-          category: 'UI/UXデザイン／マークアップ／ビジュアルデザイン／企画／運営',
-          thumb: 'images/premium-main-image@1000w.jpg'
-        },
-        {
-          id: 9,
+          id: 3,
           url: 'kaizen',
           title: 'UIカイゼン',
           category: 'UI/UXデザイン／マークアップ／企画／進行',
-          thumb: 'images/kaizen-main-image@0,25x.jpg'
+          thumb: 'images/kaizen-main-image@0,25x.jpg',
+          year: 2019
+        },
+        {
+          id: 4,
+          url: 'premium',
+          title: 'J-CASTニュース会員化',
+          category: 'UI/UXデザイン／マークアップ／ビジュアルデザイン／企画／運営',
+          thumb: 'images/premium-main-image@1000w.jpg',
+          year: 2018
+        },
+        {
+          id: 5,
+          url: 'justmysound',
+          title: 'わたしのオト',
+          category: 'UIデザイン／ビジュアルデザイン／マークアップ',
+          thumb: 'images/jms-main-image@1000w.jpg',
+          year: 2018
+        },
+        {
+          id: 6,
+          url: 'mint',
+          title: 'ミントの世界',
+          category: 'UIデザイン／ビジュアルデザイン／マークアップ',
+          thumb: 'images/mint-main-image@1000w.jpg',
+          year: 2017
+        },
+        
+        {
+          id: 7,
+          url: 'toidasmypage',
+          title: 'トイダス マイページ',
+          category: 'UI/UXデザイン／マークアップ',
+          thumb: 'images/toidas-mypage-main-image@1000w.jpg',
+          year: 2017
+        },
+        {
+          id: 8,
+          url: 'toidasvote',
+          title: 'トイダス 投票',
+          category: 'UI/UXデザイン／マークアップ',
+          thumb: 'images/toidas-vote-main-image@1000w.jpg',
+          year: 2016
+        },
+        {
+          id: 9,
+          url: 'toidas',
+          title: 'トイダス',
+          category: 'UIデザイン／ビジュアルデザイン／企画／運営',
+          thumb: 'images/toidas-main-image@0,25x.jpg',
+          year: 2016
         },
         {
           id: 10,
           url: 'graphic',
           title: 'ロゴ・グラフィック',
           category: 'グラフィックデザイン',
-          thumb: 'images/logo-main-image.jpg'
+          thumb: 'images/logo-main-image.jpg',
+          year: 2019
         }
       ]
     }
@@ -124,6 +142,33 @@ export default {
   }
   @screen lg {
     grid-template-columns: repeat(3,1fr);
+  }
+}
+.subinfo {
+  display: flex;
+  @apply mx-auto px-4 text-gray-700;
+  .new {
+    display: inline-block;
+    transform: rotate(90deg);
+    @screen md {
+      transform: rotate(45deg);
+    }
+  }
+  .old {
+    display: inline-block;
+    transform: rotate(90deg);
+    @screen md {
+      transform: rotate(45deg);
+    }
+  }
+  .material-icons {
+    font-size: 20px;
+  }
+}
+.button {
+  @apply bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full;
+  &:hover {
+    @apply bg-gray-300;
   }
 }
 </style>

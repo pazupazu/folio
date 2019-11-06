@@ -13,6 +13,8 @@
       <p>リサーチ／プロトタイプ／UIデザイン</p>
       <p class="small-text">技術</p>
       <p>Figma／ant-design／Nuxt.js／Storybook</p>
+      <p class="small-text">URL</p>
+      <p>開発中のため公開URLはまだありません</p>
       <h2 class="heading">課題</h2>
       <p>
         現状のトイダスの問題点と企業のニーズの間を埋めていくためのプロダクトが必要となった、また完成後はトイダスにも移植可能なものを目指します。

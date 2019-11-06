@@ -13,6 +13,8 @@
       <p>プロトタイプ／UIデザイン</p>
       <p class="small-text">技術</p>
       <p>XD／Bulma／Nuxt.js</p>
+      <p class="small-text">URL</p>
+      <p>https://my.toidas.net/<br /><span class="text-sm">※トイダスで会員登録後入ることができます</span></p>
       <h2 class="heading">課題</h2>
       <p>
         J-CASTニュースの会員化にともないトイダスではIDの移行が必要になり、機能追加して移行を促そうとなりました。

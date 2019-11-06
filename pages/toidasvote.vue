@@ -13,6 +13,8 @@
       <p>プロトタイプ／UIデザイン</p>
       <p class="small-text">技術</p>
       <p>XD／Nuxt.js</p>
+      <p class="small-text">URL</p>
+      <p>https://toidas.net/admin/create/poll/type1<br /><span class="text-sm">※トイダスに会員登録後入ることができます</span></p>
       <h2 class="heading">課題</h2>
       <p>
         社内の需要としてニュース記事を読み終わったあとあなたはどう思う？などの意見調査を行い、さらにそれを記事化、読者層の把握にも活用したいというニーズがありました。

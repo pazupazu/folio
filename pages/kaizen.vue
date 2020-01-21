@@ -55,7 +55,7 @@
         スマートフォントップページの記事１本目をさらに改修し、画像の上に文字を重ね、省スペース化することでもう１本記事をファーストビューに格納します。しかし、これは成績向上が見れませんでした。
       </p>
       <div class="image">
-        <img src="images/comment-image-04@2x.jpg" alt="" lazy="loaded">
+        <img src="images/kaizen-image-04@2x.jpg" alt="" lazy="loaded">
       </div>
       
     </article>
